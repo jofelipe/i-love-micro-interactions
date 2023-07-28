@@ -22,7 +22,15 @@ export default function Footer() {
   return (
     <S.Wrapper>
       <S.Container>
-        <p>Made with ❤️ by Jonathan</p>
+        <p>
+          Made with ❤️ and{' '}
+          <a
+            href="https://github.com/jofelipe/i-love-micro-interactions"
+            target="_blank"
+          >
+            open source
+          </a>
+        </p>
         <div className="mail" title="Click to copy :)">
           <a onClick={handleEmail}>{email}</a>
           {emailCopied ? (
